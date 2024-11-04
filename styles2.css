@@ -83,6 +83,7 @@
 }
 
 .letter-container{
+    font-size: 7vw;
     position: relative;
     display: flex;
     flex-direction: column;
