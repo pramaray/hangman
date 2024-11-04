@@ -18,7 +18,6 @@ const getData = async () => {
         
         const json = await response.json();
         const word = json[0];
-        console.log(word)
 
         Array.from(word).forEach((letter, i) => {
             setTimeout(() => {
@@ -57,7 +56,6 @@ const handleKeyInput = (key) => {
         wrongGuessCount++;
         document.getElementById(`hangman-piece-${wrongGuessCount}`).classList.remove("hidden-hangman-pieces");
         if (wrongGuessCount === 6) {
-            console.log("LOSS!");
             Array.from(document.getElementsByClassName('hidden')).forEach(hiddenItem => {
                 hiddenItem.classList.remove('hidden');
             })
@@ -67,7 +65,6 @@ const handleKeyInput = (key) => {
             cleanUp();
             return;
         }
-        console.log('WRONG GUESS!');
         Array.from(document.getElementsByClassName('blank')).forEach(blank => {
             blank.classList.add('red');
             setTimeout(() => {
@@ -77,7 +74,6 @@ const handleKeyInput = (key) => {
         document.getElementById(key).classList.add('guessed');
         document.getElementById(key).classList.add('red');
     } else {
-        console.log('CORRECT GUESS!');
         letters.forEach(letter => letter.classList.remove('hidden'));
         
         Array.from(document.getElementsByClassName(`letter-container-${key}`)).forEach(letterContainer => {
@@ -90,7 +86,6 @@ const handleKeyInput = (key) => {
         })
 
         if ((Array.from(document.getElementsByClassName('hidden'))).length === 0) {
-            console.log("WIN!");
             Array.from(document.getElementsByClassName('letter-container')).forEach(letterContainer => {
                 letterContainer.classList.add('win-green');
             })
@@ -104,7 +99,6 @@ const handleKeydown = (event) => {
     if (key >= 'A' && key <= 'Z') {
         handleKeyInput(key);
     } else {
-        console.log('NOT_LETTER');
     }
 };
 
