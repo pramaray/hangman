@@ -146,3 +146,9 @@
 .green .key-back {
     background-color: #135b26;
 }
+
+.hangman-pieces{
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
