@@ -1,5 +1,4 @@
-
-*{
+* {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
@@ -8,7 +7,11 @@
     box-sizing: border-box;
 }
 
-.container{
+body {
+    background-color: #2a2a2a;
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,27 +20,27 @@
     background-color: #2a2a2a;
 }
 
-.title{
+.title {
     color: #fffcf3;
-    font-size:7vw;
+    font-size: 7vw;
     display: flex;
     gap: 20px;
 }
 
-.letter{
+.letter {
     position: absolute;
     bottom: 10%;
     z-index: 10;
 }
 
-.letter-container{
+.letter-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.btn{
+.btn {
     font-size: 2.75vw;
     border-radius: 100px;
     color: #2a2a2a;
@@ -47,6 +50,6 @@
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #b1aeaa;
 }

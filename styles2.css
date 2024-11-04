@@ -1,5 +1,4 @@
-
-*{
+* {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
@@ -7,46 +6,56 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+body {
+    background-color: #2a2a2a;
+}
+
+.container {
     display: flex;
     height: 100dvh;
     background-color: #2a2a2a;
 }
-.hangman-illustration-container{
-    width:30%;
+
+.hangman-illustration-container {
+    width: 30%;
     height: 100%;
     /* outline: 1px solid white; */
-    
+
 }
-.input-container{
+
+.input-container {
     /* background-color: #3c1c1c; */
-   
+
     /* outline: 1px solid white;     */
     width: 70%;
     height: 100%;
 }
-.blank-input-container{
+
+.blank-input-container {
     height: 40%;
     width: 100%;
     /* outline: 1px solid white;     */
 }
-.keyboard-input-container{
+
+.keyboard-input-container {
     height: 60%;
     width: 100%;
     /* outline: 1px solid white;  */
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1vw;
 }
 
-.key{
+.key {
     height: 5vw;
     width: 5vw;
     position: relative;
 }
-.key-front{
+
+.key-front {
     color: #2a2a2a;
     background-color: #fffcf3;
     height: 100%;
@@ -55,34 +64,34 @@
     transform: translateY(-10%);
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     border-radius: 20%;
     font-size: 2.75vw;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
-.key-back{
+.key-back {
     background-color: #595959;
     height: 100%;
     width: 100%;
     border-radius: 20%;
 }
 
-.key-container{
+.key-container {
     display: flex;
     gap: 1vw;
     justify-content: center;
     align-items: center;
 }
 
-.letter{
+.letter {
     position: absolute;
     bottom: 10%;
     z-index: 10;
 }
 
-.letter-container{
+.letter-container {
     font-size: 7vw;
     position: relative;
     display: flex;
@@ -92,7 +101,7 @@
 
 .rec2 {
     color: #fffcf3;
-    font-size:8em;
+    font-size: 8em;
     display: flex;
     gap: 20px;
 }
@@ -107,15 +116,19 @@
     display: none;
 }
 
-.red, .loss-red {
+.red,
+.loss-red {
     color: #ec4e4e;
 }
 
-.green, .win-green {
+.green,
+.win-green {
     color: #5ea441;
 }
 
-.letter, .blank, .letter-container {
+.letter,
+.blank,
+.letter-container {
     transition: color 0.3s;
 }
 
@@ -148,7 +161,7 @@
     background-color: #3c8148;
 }
 
-.hangman-pieces{
+.hangman-pieces {
     height: 100vh;
     position: absolute;
     left: 0;
