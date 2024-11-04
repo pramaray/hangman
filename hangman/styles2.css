@@ -1,0 +1,76 @@
+
+*{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: #2a2a2a;
+}
+.hangman-illustration-container{
+    width:30%;
+    height: 100%;
+    outline: 1px solid white;
+    
+}
+.input-container{
+    /* background-color: #3c1c1c; */
+   
+    outline: 1px solid white;    
+    width: 70%;
+    height: 100%;
+}
+.blank-input-container{
+    height: 40%;
+    width: 100%;
+    outline: 1px solid white;    
+}
+.keyboard-input-container{
+    height: 60%;
+    width: 100%;
+    outline: 1px solid white; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.key{
+    height: 5vw;
+    width: 5vw;
+    position: relative;
+}
+.key-front{
+    color: #2a2a2a;
+    background-color: #fffcf3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 20%;
+    font-size: 2.75vw;
+    cursor: pointer;
+}
+
+.key-back{
+    background-color: #595959;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+}
+
+.key-container{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
