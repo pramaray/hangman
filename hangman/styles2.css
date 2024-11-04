@@ -15,25 +15,25 @@
 .hangman-illustration-container{
     width:30%;
     height: 100%;
-    outline: 1px solid white;
+    /* outline: 1px solid white; */
     
 }
 .input-container{
     /* background-color: #3c1c1c; */
    
-    outline: 1px solid white;    
+    /* outline: 1px solid white;     */
     width: 70%;
     height: 100%;
 }
 .blank-input-container{
     height: 40%;
     width: 100%;
-    outline: 1px solid white;    
+    /* outline: 1px solid white;     */
 }
 .keyboard-input-container{
     height: 60%;
     width: 100%;
-    outline: 1px solid white; 
+    /* outline: 1px solid white;  */
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -124,4 +124,25 @@
 
 .key-front:hover {
     background-color: #b1aeaa;
+}
+
+.guessed .key-front {
+    transform: translateY(-5%);
+    cursor: default;
+}
+
+.red .key-front {
+    background-color: #ff6d6d;
+}
+
+.green .key-front {
+    background-color: #47ff78;
+}
+
+.red .key-back {
+    background-color: #612424;
+}
+
+.green .key-back {
+    background-color: #135b26;
 }
