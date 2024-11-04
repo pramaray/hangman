@@ -43,6 +43,8 @@
     color: #2a2a2a;
     background-color: #fffcf3;
     padding: 0 1em;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover{
