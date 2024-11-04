@@ -54,6 +54,9 @@ const handleKeyInput = (key) => {
                 blank.classList.add('win-green');
             })
             document.removeEventListener("keydown", handleKeydown);
+            Array.from(document.getElementsByClassName("key")).forEach(key => {
+                key.removeEventListener("click", handleKeyInput(key.id));
+            })
         }
     }
 }
@@ -70,6 +73,10 @@ const handleKeydown = (event) => {
 document.getElementById("play-btn").addEventListener("click", () => {
     window.location.href = "index2.html"
 });
+
+Array.from(document.getElementsByClassName("key")).forEach(key => {
+    key.addEventListener("click", handleKeyInput(key.id));
+})
 
 document.addEventListener("keydown", handleKeydown);
 getData();

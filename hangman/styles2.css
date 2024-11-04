@@ -59,6 +59,7 @@
     border-radius: 20%;
     font-size: 2.75vw;
     cursor: pointer;
+    transition: transform 0.3s;
 }
 
 .key-back{
@@ -115,4 +116,12 @@
 
 .letter, .blank, .letter-container {
     transition: color 0.3s;
+}
+
+.key-front:active {
+    transform: translateY(0);
+}
+
+.key-front:hover {
+    background-color: #b1aeaa;
 }
