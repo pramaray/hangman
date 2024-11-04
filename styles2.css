@@ -30,6 +30,15 @@ body {
     /* outline: 1px solid white;     */
     width: 70%;
     height: 100%;
+    text-align: center;
+    color: #fffcf3;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
 }
 
 .blank-input-container {
@@ -39,7 +48,7 @@ body {
 }
 
 .keyboard-input-container {
-    height: 60%;
+    height: 55%;
     width: 100%;
     /* outline: 1px solid white;  */
     display: flex;

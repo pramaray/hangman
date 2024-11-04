@@ -9,6 +9,15 @@
 
 body {
     background-color: #2a2a2a;
+    text-align: center;
+    color: #fffcf3;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
 }
 
 .container {
@@ -16,8 +25,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100dvh;
+    min-height: 95dvh;
     background-color: #2a2a2a;
+
 }
 
 .title {
