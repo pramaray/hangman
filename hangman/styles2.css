@@ -106,12 +106,12 @@
     display: none;
 }
 
-.red {
-    color: red;
+.red, .loss-red {
+    color: #ec4e4e;
 }
 
 .green, .win-green {
-    color: seagreen;
+    color: #5ea441;
 }
 
 .letter, .blank, .letter-container {
@@ -132,23 +132,27 @@
 }
 
 .red .key-front {
-    background-color: #ff6d6d;
+    background-color: #ec4e4e;
 }
 
 .green .key-front {
-    background-color: #47ff78;
+    background-color: #5ea441;
 }
 
 .red .key-back {
-    background-color: #612424;
+    background-color: #7a1c1c;
 }
 
 .green .key-back {
-    background-color: #135b26;
+    background-color: #3c8148;
 }
 
 .hangman-pieces{
     height: 100vh;
     position: absolute;
     left: 0;
+}
+
+.hidden-hangman-pieces {
+    display: none;
 }
