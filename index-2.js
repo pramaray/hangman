@@ -9,7 +9,7 @@ const cleanUp = () => {
 
 const getData = async () => {
     const wordSize = Math.floor(Math.random() * 5 + 5);
-    const url = `https://random-word-api.herokuapp.com/word?length=${wordSize}`;
+    const url = `https://random-word-api.vercel.app/api?words=1&length=${wordSize}`;
     try {
         const response = await fetch(url);
         if (!response.ok) {
