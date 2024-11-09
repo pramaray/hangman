@@ -96,9 +96,8 @@ const handleKeyInput = (key) => {
 
 const handleKeydown = (event) => {
     const key = event.key.toUpperCase();
-    if (key >= 'A' && key <= 'Z') {
+    if (key.length === 1 && key >= 'A' && key <= 'Z') {
         handleKeyInput(key);
-    } else {
     }
 };
 
